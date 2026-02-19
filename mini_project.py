@@ -1,11 +1,11 @@
 password = str(input("Enter your password: "))
 password_len = len(password)
 
+num = False
+
 for char in password:
     if char.isdigit():
         num = True
-    else:
-        num = False
 
 if (password_len >= 8 and num == True):
     print("Password accepted")
